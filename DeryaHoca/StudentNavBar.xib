@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U21-IX-dA5" customClass="StudentNavBar">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.49999999999999961" contentMode="scaleToFill" id="fDW-bw-dKc">
+                    <rect key="frame" x="81" y="47" width="800" height="4"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voiceIcon.png" id="wSD-3n-H8z">
+                    <rect key="frame" x="952" y="4" width="62" height="84"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelBtn.png" id="uiI-J2-dfp">
+                    <rect key="frame" x="915" y="36" width="26" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backBtn.png" id="khK-ii-2QR">
+                    <rect key="frame" x="7" y="25" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tYm-3s-815">
+                    <rect key="frame" x="903" y="21" width="52" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelDidTapped:" destination="U21-IX-dA5" eventType="touchUpInside" id="bbv-Kn-YUh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YWW-FD-neF">
+                    <rect key="frame" x="963" y="21" width="61" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="voiceDidTapped:" destination="U21-IX-dA5" eventType="touchUpInside" id="62L-Fu-xx3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="boy-Wg-JOj">
+                    <rect key="frame" x="0.0" y="8" width="67" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="anasayfaDidTapped:" destination="U21-IX-dA5" eventType="touchUpInside" id="Tjy-53-ldB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0078431372549019607" green="0.52549019607843139" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAnasayfa" destination="boy-Wg-JOj" id="J8T-iw-vgW"/>
+                <outlet property="btnCancel" destination="tYm-3s-815" id="aUe-Yz-m7r"/>
+                <outlet property="btnVoice" destination="YWW-FD-neF" id="1c2-1l-f6S"/>
+                <outlet property="imViewAnasayfa" destination="khK-ii-2QR" id="AlQ-Pc-1eT"/>
+                <outlet property="imViewCancel" destination="uiI-J2-dfp" id="9h7-jZ-MD9"/>
+                <outlet property="imViewVoice" destination="wSD-3n-H8z" id="Q5u-Fa-lS1"/>
+                <outlet property="viewCumleSeridi" destination="fDW-bw-dKc" id="uZC-u9-Gqy"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backBtn.png" width="48" height="48"/>
+        <image name="cancelBtn.png" width="46" height="43"/>
+        <image name="voiceIcon.png" width="72" height="94"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1zA-od-f3l" customClass="BottomBar">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusSign.png" id="jrd-eV-bHA">
+                    <rect key="frame" x="967" y="21" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minusSign.png" id="Vm3-92-9ef">
+                    <rect key="frame" x="902" y="21" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A96-lf-hHP">
+                    <rect key="frame" x="886" y="8" width="63" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="minusSignDidTapped:" destination="1zA-od-f3l" eventType="touchUpInside" id="ayd-Kn-cO4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HHd-ie-5SW">
+                    <rect key="frame" x="953" y="8" width="63" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="plusSignDidTapped:" destination="1zA-od-f3l" eventType="touchUpInside" id="vnB-HY-v57"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockIconUnlocked.png" highlightedImage="lockIconLocked.png" id="zuQ-2B-fip">
+                    <rect key="frame" x="972" y="19" width="24" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0039215686269999999" green="0.36078431370000003" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMinus" destination="A96-lf-hHP" id="67Y-Ub-ofN"/>
+                <outlet property="btnPlus" destination="HHd-ie-5SW" id="JQG-3c-v6m"/>
+                <outlet property="imViewLock" destination="zuQ-2B-fip" id="bw1-F5-DQu"/>
+                <outlet property="imViewMinus" destination="Vm3-92-9ef" id="paz-FE-Wb6"/>
+                <outlet property="imViewPlus" destination="jrd-eV-bHA" id="l2p-m2-96b"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lockIconLocked.png" width="48" height="64"/>
+        <image name="lockIconUnlocked.png" width="48" height="64"/>
+        <image name="minusSign.png" width="48" height="48"/>
+        <image name="plusSign.png" width="48" height="48"/>
+    </resources>
+</document>
